@@ -1,5 +1,18 @@
+# file send.py
+
 import socket
 
-sender = socket.socket()
+server = socket.socket()
 
-print(sender)
+serverAddr = ("127.0.0.1", 1025, )
+
+server.bind(serverAddr)
+
+server.listen(0)
+
+foo = server.accept()
+
+print(foo)
+
+
+
