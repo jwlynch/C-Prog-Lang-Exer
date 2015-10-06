@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+// Chapter 1: A Tutorial Introduction; Exercise 1-11. 
+//
+// How would you test the word count program? 
+\\ What kinds of input are most likely to uncover bugs if there are any?
+
 #define IN    1 /* inside a word */
 #define OUT   0 /* outside a word */
 
