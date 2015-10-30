@@ -2,7 +2,20 @@
 
 int histogram(int (*data) (int), int data_length)
 {
-  int i;
+  int i, data_min, data_max;
+  
+  // get min and max data
+  
+  data_min = data_max = (*data)(0);
+  
+  for (i = 0; i < data_length; ++i)
+  {
+    if(data_min > data(i))
+      data_min = data(i);
+    
+    if(data_max < data(i))
+      data_max = data(i);
+  }
   
   for (i = 0 ; i < data_length; ++i)
     printf("%d\n", i);
