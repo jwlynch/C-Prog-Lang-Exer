@@ -18,7 +18,9 @@ int histogram(int (*data) (int), int data_length)
   }
   
   for (i = 0 ; i < data_length; ++i)
-    printf("%d\n", i);
+    printf("%d %d\n", i, data(i));
+  
+  printf("min is %d, max is %d\n", data_min, data_max);
   
   return 0;
 }
