@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+#include "histogram.h"
+
+// #define MAKE_MAIN_FUNC_HERE
+
 int histogram(int (*data) (int), int data_length)
 {
   int i, j, data_min, data_max, data_range;
@@ -51,10 +55,14 @@ void histo_tester(void)
   histogram(&data_A, 3);
 }
 
+ifdef MAKE_MAIN_FUNC_HERE
+
 int main(void)
 {
   histo_tester();
   
   return 0;
 }
+
+#endif
 
