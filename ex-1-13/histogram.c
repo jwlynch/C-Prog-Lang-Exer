@@ -55,7 +55,7 @@ void histo_tester(void)
   histogram(&data_A, 3);
 }
 
-ifdef MAKE_MAIN_FUNC_HERE
+#ifdef MAKE_MAIN_FUNC_HERE
 
 int main(void)
 {
